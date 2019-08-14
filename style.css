@@ -1,0 +1,36 @@
+input[type=button]{
+  background-color:black;
+  color: white;
+  width: 48px;
+}
+input[type=button]:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+input[type=submit] {
+  background-color:black;
+  color: white;
+  width: 48px;
+}
+input[type=submit]:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+input[type = text] {
+  background-color:white; 
+  border: solid black 2px; 
+  width:98%; 
+  padding-top: 8px;
+}
+#operator{
+    background-color: coral;
+}
+#calculator{
+  background-color: lightskyblue;
+  width: 280px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 15px; 
+}
+#column{
+  border: 1px black;
+}
