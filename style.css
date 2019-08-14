@@ -1,36 +1,37 @@
+input{
+  height:25px;
+  cursor:pointer;
+}
+
+input[type=text]{
+  width: 100%;
+  border:1px solid grey;
+  background-color: white;
+  border-radius: 10px;
+  height:30px
+}
+
+input[type=button],input[type=submit]{
+  width:100%;
+  border:1px solid grey;
+}
+
+input[type=submit]{
+  background-color: cadetblue;
+  color: white;
+}
+
 input[type=button]{
-  background-color:black;
-  color: white;
-  width: 48px;
+ background-color: azure;
 }
-input[type=button]:hover {
-  background-color: whitesmoke;
-  color: black;
+
+table, td{
+  padding:10px;
+  border :1px solid grey;
+  border-collapse: collapse;
+  margin: 10% auto;
 }
-input[type=submit] {
-  background-color:black;
-  color: white;
-  width: 48px;
-}
-input[type=submit]:hover {
-  background-color: whitesmoke;
-  color: black;
-}
-input[type = text] {
-  background-color:white; 
-  border: solid black 2px; 
-  width:98%; 
-  padding-top: 8px;
-}
-#operator{
-    background-color: coral;
-}
-#calculator{
-  background-color: lightskyblue;
-  width: 280px;
-  padding: 5px 5px 5px 5px;
-  border-radius: 15px; 
-}
-#column{
-  border: 1px black;
+
+td{
+  width:100px;
 }

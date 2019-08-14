@@ -16,33 +16,31 @@
         $sql="select records from history";
         $result = executeQuery($sql);
         if ($result->num_rows > 0) {
+            $string = "";
             while($row = $result->fetch_assoc()) {
-            echo "id: " . $row["id"]. " - Result: " . $row["records"]. "<br>";
+                $string .= $row["records"]. "<br>";
             }
+            return $string;
         } else {
-            echo "0 results";
+            return "0 results";
         }
     }
 
     function insertValue($num)
     {
-        echo $num;
         $sql="insert into history (records) values ('".$num."')";
-        $result = executeQuery($sql);
-        echo $result;
-        //echo "inserted";
+        executeQuery($sql);
     }
 
     function deleteAll()
     {
         $sql="delete from history";
-        $result = executeQuery($sql);
-        echo $result;
+        executeQuery($sql);
     }
 
     function executeQuery($sql){
         global $conn;
         $result = $conn->query($sql);
-        //return $result;
+        return $result;
     }
 ?>

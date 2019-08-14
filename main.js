@@ -5,8 +5,10 @@ function disp(val) {
 function Calculate() {
   var inputElement = document.getElementById("result");
   let res = eval(inputElement.value);
-  inputElement.value += "= " + res;
-  document.getElementById("calculator").submit();
+  if(res!=""){
+    inputElement.value += "= " + res;
+    document.getElementById("calculator").submit();
+  }
 }
 
 function clrsc() {
